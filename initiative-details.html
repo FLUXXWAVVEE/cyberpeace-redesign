@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="page-title">Initiative Details | CyberPeace</title>
+    <meta name="description" content="Detailed information on CyberPeace initiatives, programs, objectives, and global progress.">
+    
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons & Styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        .details-grid-layout {
+            display: grid;
+            grid-template-columns: 1.7fr 1.3fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        .details-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+        .details-list-item i {
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+        .breadcrumb-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+        .breadcrumb-link {
+            color: var(--accent-blue);
+            transition: var(--transition-fast);
+        }
+        .breadcrumb-link:hover {
+            color: var(--accent-purple);
+            text-decoration: underline;
+        }
+        .breadcrumb-current {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        .meta-info-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-top: 15px;
+            padding: 6px 16px;
+            background: rgba(37, 99, 235, 0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+        }
+        .details-back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 14px 28px;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            color: white !important;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px rgba(124, 58, 237, 0.15);
+            transition: var(--transition-smooth);
+        }
+        .details-back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.25);
+        }
+        .details-back-btn:focus-visible {
+            outline: 2px solid var(--accent-purple);
+            outline-offset: 4px;
+        }
+        @media (max-width: 991px) {
+            .details-grid-layout {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Sticky Premium Navbar -->
+            <header class="navbar-wrapper">
+                <div class="announcement-bar">
+                    <a href="https://cyberpeace.webflow.io/events/launch-of-australian-cybersecurity-qualifications" class="announcement-link">
+                        <span>Launch of Australian Cybersecurity Qualifications</span>
+                        <svg class="arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <nav class="nav-container">
+                    <a href="index.html" class="brand-logo">
+                        <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d28d4c5130957a48d0e325_Logo.svg" alt="CyberPeace">
+                    </a>
+
+                    <div class="nav-menu">
+                        <div class="nav-group-left">
+                            <form action="blogs.html" method="GET" class="search-form">
+                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                <input type="search" name="query" placeholder="Search by Topic..." required>
+                            </form>
+                            <a href="support-us.html" class="nav-item">Support Us</a>
+                            <a href="engage.html" class="nav-item">Engage</a>
+                        </div>
+                        <div class="nav-group-right">
+                            <a href="initiatives.html" class="nav-item active">Initiatives</a>
+                            <a href="about-us.html" class="nav-item">About Us</a>
+                            <a href="grievances.html" class="nav-item">Grievances</a>
+                            <div class="dropdown-wrapper">
+                                <button class="dropdown-trigger">
+                                    Resources <i class="fa-solid fa-chevron-down drop-arrow"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="blogs.html">Blogs</a>
+                                    <a href="publications.html">Publications</a>
+                                    <a href="fact-check.html">#FactCheck Report</a>
+                                    <a href="newsroom.html">Newsroom</a>
+                                    <a href="newsletter.html">Newsletter</a>
+                                    <a href="iec.html">IEC</a>
+                                    <a href="https://cyberpeace.world/" target="_blank">CyberPeace Journal</a>
+                                </div>
+                            </div>
+                            <a href="events.html" class="nav-item">Events</a>
+                        </div>
+                    </div>
+
+                    <button class="mobile-toggle" aria-label="Toggle menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </nav>
+            </header>
+
+            <!-- Floating Side CTA Actions -->
+            <div class="side-cta-wrapper">
+                <a href="support-us.html" class="side-cta-btn donate">
+                    <span class="cta-txt">Donate</span>
+                </a>
+                <a href="engage.html" class="side-cta-btn engage">
+                    <span class="cta-txt">Engage</span>
+                </a>
+            </div>
+
+            <!-- Particles Background -->
+            <div class="canvas-bg-wrapper">
+                <canvas id="grid-particles"></canvas>
+            </div>
+
+            <!-- Subpage Hero -->
+            <section class="subpage-hero" id="hero-section">
+                <div class="glow-blob blob-1"></div>
+                <div class="glow-blob blob-2"></div>
+                <div class="grid-container">
+                    <div class="hero-content">
+                        <!-- Dynamic Tags and Title -->
+                        <span class="initiative-tag" id="detail-tag" style="font-size: 0.85rem; font-weight: 800; letter-spacing: 0.08em;">Initiative</span>
+                        <h1 class="subpage-title" id="detail-title" style="margin-top: 10px;">Initiative Details</h1>
+                        <p class="subpage-desc" id="detail-desc" style="margin-top: 15px;">Loading details...</p>
+                        <div class="meta-info-badge" id="detail-location-badge">
+                            <i class="fa-solid fa-earth-americas" id="detail-location-icon"></i>
+                            <span id="detail-location">Global</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Content Section -->
+            <section class="subpage-section">
+                <div class="grid-container">
+                    
+                    <!-- Breadcrumbs -->
+                    <nav class="breadcrumb-container" aria-label="Breadcrumb" id="breadcrumbs">
+                        <a href="index.html" class="breadcrumb-link">Home</a>
+                        <span style="user-select: none;">&gt;</span>
+                        <a href="initiatives.html" class="breadcrumb-link">Initiatives</a>
+                        <span style="user-select: none;">&gt;</span>
+                        <span class="breadcrumb-current" id="breadcrumb-current">Initiative</span>
+                    </nav>
+
+                    <!-- Dynamic Details Grid -->
+                    <div class="details-grid-layout" id="details-grid">
+                        
+                        <!-- Left Column: Overview and Program Details -->
+                        <div class="details-main-content">
+                            <div class="glass-card" style="padding: 40px; margin-bottom: 40px; display: flex; flex-direction: column; gap: 30px;">
+                                <div>
+                                    <h2 style="font-size: 1.8rem; margin-bottom: 16px; color: var(--text-primary); font-family: 'Plus Jakarta Sans', sans-serif;">Overview</h2>
+                                    <p id="detail-overview-text" style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary);"></p>
+                                </div>
+                                
+                                <div style="border-top: 1px solid var(--glass-border); padding-top: 30px;">
+                                    <h2 style="font-size: 1.8rem; margin-bottom: 16px; color: var(--text-primary); font-family: 'Plus Jakarta Sans', sans-serif;">Program Structure & Impact</h2>
+                                    <p id="detail-program-text" style="font-size: 1.05rem; line-height: 1.7; color: var(--text-secondary);"></p>
+                                </div>
+                            </div>
+                            
+                            <a href="initiatives.html" class="details-back-btn">
+                                <i class="fa-solid fa-arrow-left"></i> Back to Initiatives
+                            </a>
+                        </div>
+                        
+                        <!-- Right Column: Objectives & Highlights -->
+                        <div class="details-sidebar-content">
+                            <!-- Objectives Card -->
+                            <div class="glass-card" style="padding: 40px; margin-bottom: 30px;">
+                                <h3 style="font-size: 1.35rem; margin-bottom: 20px; color: var(--text-primary); font-family: 'Plus Jakarta Sans', sans-serif;">
+                                    <i class="fa-solid fa-bullseye" style="color: var(--accent-purple); margin-right: 8px;"></i> Core Objectives
+                                </h3>
+                                <ul id="detail-objectives-list" style="list-style: none; display: flex; flex-direction: column; gap: 16px; padding-left: 0;">
+                                    <!-- Populated dynamically -->
+                                </ul>
+                            </div>
+                            
+                            <!-- Highlights Card -->
+                            <div class="glass-card" style="padding: 40px;">
+                                <h3 style="font-size: 1.35rem; margin-bottom: 20px; color: var(--text-primary); font-family: 'Plus Jakarta Sans', sans-serif;">
+                                    <i class="fa-solid fa-star" style="color: var(--accent-cyan); margin-right: 8px;"></i> Key Highlights
+                                </h3>
+                                <ul id="detail-highlights-list" style="list-style: none; display: flex; flex-direction: column; gap: 16px; padding-left: 0;">
+                                    <!-- Populated dynamically -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Invalid/Error State Page -->
+                    <div id="error-state-container" class="glass-card" style="display: none; padding: 60px 40px; text-align: center; max-width: 600px; margin: 40px auto; flex-direction: column; align-items: center; justify-content: center; gap: 24px;">
+                        <i class="fa-solid fa-triangle-exclamation" style="font-size: 4rem; color: var(--accent-purple);"></i>
+                        <h2 style="font-size: 2rem; color: var(--text-primary); font-family: 'Plus Jakarta Sans', sans-serif;">Initiative Not Found</h2>
+                        <p style="color: var(--text-secondary); line-height: 1.6; font-size: 1.1rem; max-width: 480px; margin: 0 auto;">
+                            The initiative you requested does not exist or the link may have broken.
+                        </p>
+                        <a href="initiatives.html" class="details-back-btn" style="margin-top: 10px;">
+                            <i class="fa-solid fa-arrow-left"></i> Return to Initiatives
+                        </a>
+                    </div>
+
+                    <!-- Related Initiatives Section -->
+                    <div class="related-section-wrapper" id="related-section" style="margin-top: 80px; border-top: 1px solid var(--glass-border); padding-top: 60px; margin-bottom: 60px;">
+                        <h2 style="font-size: 2rem; margin-bottom: 40px; text-align: center; color: var(--text-primary); font-family: 'Plus Jakarta Sans', sans-serif;">
+                            Related <span class="highlight-purple">Initiatives</span>
+                        </h2>
+                        <div class="initiatives-grid" id="related-initiatives-list">
+                            <!-- Populated dynamically with 2 cards -->
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer-wrapper">
+                <div class="grid-container">
+                    <div class="footer-grid-layout">
+                        <!-- Column 1: Brand details & social icons -->
+                        <div class="footer-col brand-col">
+                            <a href="#" class="footer-logo">
+                                <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d5bf01e439fc5754382dd5_logo-2.svg" alt="Cyberpeace Foundation">
+                            </a>
+                            <div class="footer-social-icons">
+                                <a href="https://www.youtube.com/channel/UCBYrx6bBPp5xpjKaiCqhIKg" target="_blank" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://in.linkedin.com/company/cyberpeacefoundation" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/cyberpeacefoundation/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://twitter.com/cyberpeacengo" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.facebook.com/cyberpeacefoundation/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Engage Links -->
+                        <div class="footer-col links-col">
+                            <h4 class="col-head">Engage</h4>
+                            <a href="initiatives.html">Initiatives</a>
+                            <a href="about-us.html">About Us</a>
+                            <a href="blogs.html">Resources</a>
+                            <a href="/proposals">Procurement</a>
+                            <a href="https://www.cyberpeacesummit.com/" target="_blank">CyberPeace Summit 2.0</a>
+                        </div>
+
+                        <!-- Column 3: Support Links -->
+                        <div class="footer-col links-col">
+                            <h4 class="col-head">Support</h4>
+                            <a href="support-us.html">Support Us</a>
+                            <a href="https://cyberpeace.webflow.io/support-us#faq">FAQs</a>
+                            <a href="events.html">Events</a>
+                            <a href="newsroom.html">Newsroom</a>
+                            <a href="newsletter.html">Newsletter</a>
+                            <a href="grievances.html">Grievances</a>
+                        </div>
+
+                        <!-- Column 4: Contact details & newsletter -->
+                        <div class="footer-col contact-col">
+                            <div class="footer-newsletter">
+                                <h3>Subscribe to stay in touch</h3>
+                                <form id="footer-newsletter-form" class="newsletter-form">
+                                    <input type="email" placeholder="Email address" required>
+                                    <button type="submit" class="newsletter-submit">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="footer-contact-info">
+                                <a href="tel:+919570000066" class="helpline-trigger-btn">
+                                    <i class="fa-solid fa-phone-volume"></i> CyberPeace Helpline
+                                </a>
+                                <div class="address-card">
+                                    <p><i class="fa-solid fa-phone"></i> +91 8235058865</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> Connaught Place, New Delhi - 110001</p>
+                                    <p><i class="fa-solid fa-envelope"></i> secretariat@cyberpeace.net</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 CyberPeace Foundation. All Rights Reserved.</p>
+                        <div class="footer-legal-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Top Arrow button -->
+            <a href="#" class="ab_top-arrow" id="back-to-top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Script imports: CDNs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    
+    <!-- Local Datastore & Core Script -->
+    <script src="initiatives-data.js"></script>
+    <script src="main.js"></script>
+
+    <!-- Dynamic Router and Content Populator -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const id = urlParams.get('id');
+
+            const pageTitleEl = document.getElementById('page-title');
+            const breadcrumbsEl = document.getElementById('breadcrumbs');
+            const detailsGridEl = document.getElementById('details-grid');
+            const relatedSectionEl = document.getElementById('related-section');
+            const errorStateEl = document.getElementById('error-state-container');
+            const heroSectionEl = document.getElementById('hero-section');
+
+            // 1. Validate if data store is available
+            if (!window.INITIATIVES_DATA) {
+                console.error("Initiatives database was not loaded.");
+                showErrorState();
+                return;
+            }
+
+            const initiative = window.INITIATIVES_DATA[id];
+
+            // 2. Handle invalid or missing IDs
+            if (!id || !initiative) {
+                showErrorState();
+                return;
+            }
+
+            // 3. Populate details dynamic content
+            pageTitleEl.innerText = `${initiative.title} | CyberPeace`;
+            document.getElementById('breadcrumb-current').innerText = initiative.title;
+            document.getElementById('detail-tag').innerText = initiative.tag;
+            document.getElementById('detail-title').innerText = initiative.title;
+            document.getElementById('detail-desc').innerText = initiative.desc;
+            document.getElementById('detail-location').innerText = initiative.location;
+            
+            // Set location icon class
+            const locationIconEl = document.getElementById('detail-location-icon');
+            locationIconEl.className = `fa-solid ${initiative.locationIcon}`;
+
+            document.getElementById('detail-overview-text').innerText = initiative.overview;
+            document.getElementById('detail-program-text').innerText = initiative.programStructure;
+
+            // Populate objectives list
+            const objectivesList = document.getElementById('detail-objectives-list');
+            objectivesList.innerHTML = initiative.objectives.map(obj => `
+                <li class="details-list-item">
+                    <i class="fa-solid fa-circle-check" style="color: var(--accent-success);"></i>
+                    <span>${obj}</span>
+                </li>
+            `).join('');
+
+            // Populate highlights list
+            const highlightsList = document.getElementById('detail-highlights-list');
+            highlightsList.innerHTML = initiative.highlights.map(hl => `
+                <li class="details-list-item">
+                    <i class="fa-solid fa-star" style="color: var(--accent-cyan);"></i>
+                    <span>${hl}</span>
+                </li>
+            `).join('');
+
+            // Populate related initiatives list (select 2)
+            const relatedListEl = document.getElementById('related-initiatives-list');
+            relatedListEl.innerHTML = initiative.related.map(relId => {
+                const rel = window.INITIATIVES_DATA[relId];
+                if (!rel) return '';
+                return `
+                    <a href="initiative-details.html?id=${rel.id}" class="initiative-card glass-card">
+                        <span class="initiative-tag">${rel.tag}</span>
+                        <h3 class="initiative-title">${rel.title}</h3>
+                        <p class="initiative-desc">${rel.desc}</p>
+                        <div class="initiative-footer">
+                            <span class="initiative-country"><i class="fa-solid ${rel.locationIcon}"></i> ${rel.location}</span>
+                            <i class="fa-solid fa-arrow-right initiative-arrow"></i>
+                        </div>
+                    </a>
+                `;
+            }).join('');
+
+            // Helper: Display clean error state layout
+            function showErrorState() {
+                pageTitleEl.innerText = `Initiative Not Found | CyberPeace`;
+                breadcrumbsEl.style.display = 'none';
+                detailsGridEl.style.display = 'none';
+                relatedSectionEl.style.display = 'none';
+                errorStateEl.style.display = 'flex';
+                
+                // Set hero text to generic error indicators
+                document.getElementById('detail-tag').innerText = "Alert";
+                document.getElementById('detail-title').innerText = "Initiative Not Found";
+                document.getElementById('detail-desc').innerText = "We could not find the initiative details you requested.";
+                document.getElementById('detail-location-badge').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
