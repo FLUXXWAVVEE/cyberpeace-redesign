@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uniting for Global Cyber Resilience | CyberPeace</title>
+    <meta name="description" content="We bring people together, from the grassroots to the policy level players to co-create CyberPeace initiatives and policies to make the digital absolutely safe even to the most vulnerable.">
+    
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons & Styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Smooth scroll wrapper -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Sticky Premium Navbar -->
+            <header class="navbar-wrapper">
+                <!-- Announcement Bar -->
+                <div class="announcement-bar">
+                    <a href="https://cyberpeace.webflow.io/events/launch-of-australian-cybersecurity-qualifications" class="announcement-link">
+                        <span>Launch of Australian Cybersecurity Qualifications</span>
+                        <svg class="arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <nav class="nav-container">
+                    <a href="index.html" class="brand-logo">
+                        <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d28d4c5130957a48d0e325_Logo.svg" alt="CyberPeace">
+                    </a>
+
+                    <!-- Nav Items -->
+                    <div class="nav-menu">
+                        <div class="nav-group-left">
+                            <form action="blogs.html" method="GET" class="search-form">
+                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                <input type="search" name="query" placeholder="Search by Topic..." required>
+                            </form>
+                            <a href="support-us.html" class="nav-item">Support Us</a>
+                            <a href="engage.html" class="nav-item">Engage</a>
+                        </div>
+                        <div class="nav-group-right">
+                            <a href="initiatives.html" class="nav-item">Initiatives</a>
+                            <a href="about-us.html" class="nav-item">About Us</a>
+                            <a href="grievances.html" class="nav-item">Grievances</a>
+                            <div class="dropdown-wrapper">
+                                <button class="dropdown-trigger">
+                                    Resources <i class="fa-solid fa-chevron-down drop-arrow"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="blogs.html">Blogs</a>
+                                    <a href="publications.html">Publications</a>
+                                    <a href="fact-check.html">#FactCheck Report</a>
+                                    <a href="newsroom.html">Newsroom</a>
+                                    <a href="newsletter.html">Newsletter</a>
+                                    <a href="iec.html">IEC</a>
+                                    <a href="https://cyberpeace.world/" target="_blank">CyberPeace Journal</a>
+                                </div>
+                            </div>
+                            <a href="events.html" class="nav-item">Events</a>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-toggle" aria-label="Toggle menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </nav>
+            </header>
+
+            <!-- Floating Side CTA Actions -->
+            <div class="side-cta-wrapper">
+                <a href="support-us.html" class="side-cta-btn donate">
+                    <span class="cta-txt">Donate</span>
+                </a>
+                <a href="engage.html" class="side-cta-btn engage">
+                    <span class="cta-txt">Engage</span>
+                </a>
+            </div>
+
+            <!-- Main Interactive Canvas Background -->
+            <div class="canvas-bg-wrapper">
+                <canvas id="grid-particles"></canvas>
+            </div>
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <!-- 3D Viewport for Rotating Vanta Globe Background -->
+                <div id="vanta-globe-viewport" class="hero-vanta-bg"></div>
+
+                <div class="glow-blob blob-1"></div>
+                <div class="glow-blob blob-2"></div>
+                
+                <!-- Centered Hero content -->
+                <div class="hero-content-centered">
+                    <div class="hero-subtitle">Together,</div>
+                    <h1 class="hero-title">
+                        Let's keep the digital world safe. <br><span class="highlight-purple">FOR ALL.</span>
+                    </h1>
+                    <p class="hero-desc">
+                        We bring people together, from the grassroots to the policy level players, to co-create CyberPeace initiatives and policies that make the digital realm absolutely safe, for even the most vulnerable netizens.
+                    </p>
+                    <div class="hero-actions centered">
+                        <a href="about-us.html" class="btn btn-primary">Know more <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="https://www.cyberpeacesummit.com/" class="btn btn-secondary">CyberPeace Summit 2.0</a>
+                    </div>
+                </div>
+
+                <!-- Glass Technology Dock -->
+                <div class="hero-dock-grid">
+                    <!-- Column 1: Digest Stats Grid -->
+                    <div class="dock-card glass-card">
+                        <h4 class="dock-card-head"><i class="fa-solid fa-chart-line"></i> CyberPeace Digest</h4>
+                        <div class="dock-stats-grid">
+                            <div class="dock-stat">
+                                <div class="stat-num" data-val="130">0+</div>
+                                <div class="stat-label">Countries</div>
+                            </div>
+                            <div class="dock-stat">
+                                <div class="stat-num" data-val="200">0M+</div>
+                                <div class="stat-label">Netizens Impacted</div>
+                            </div>
+                            <div class="dock-stat">
+                                <div class="stat-num" data-val="35000">0</div>
+                                <div class="stat-label">Victims assisted</div>
+                            </div>
+                            <div class="dock-stat">
+                                <div class="stat-num" data-val="3000">0+</div>
+                                <div class="stat-label">Volunteers</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Helpline Details -->
+                    <div class="dock-card glass-card">
+                        <h4 class="dock-card-head"><i class="fa-solid fa-phone-volume"></i> CyberPeace Helpline</h4>
+                        <div class="dock-helpline-details">
+                            <p>For assistance, call us at Helpline +91 9570000066 or contact us via email below:</p>
+                            <a href="mailto:helpline@cyberpeace.net" class="helpline-email">helpline@cyberpeace.net</a>
+                            <div class="dock-stat-single">
+                                <span class="stat-num" data-val="35000">0</span>
+                                <span class="stat-label">Victims assisted</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Events -->
+                    <div class="dock-card glass-card">
+                        <h4 class="dock-card-head"><i class="fa-solid fa-calendar-days"></i> Events & Workshops</h4>
+                        <div class="dock-event-details">
+                            <p>Get involved in our latest training safety webinars and cyber law workshops:</p>
+                            <a href="/events/cyberpeace-first-responder-workshop-on-kids-family-online-safety" class="event-accordion-link">
+                                <span>Kids & Family Online Safety Workshop</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mission Partners Marquee -->
+            <section class="partners-section">
+                <div class="partners-container">
+                    <h4 class="section-tag">Our Mission Partners in All Our Endeavours.</h4>
+                    <div class="marquee-wrapper">
+                        <div class="marquee-track">
+                            <!-- Duplicate logos to ensure seamless loop -->
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3c7b6ecd88c4ea0c0b8cb_image_131_4x.webp" alt="Government of India"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3c7b7b92e68604a702dc7_image_132_4x.webp" alt="Meta"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3c7b6bdca6abe7e77e4c4_image_133_4x.webp" alt="Google"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/69e0c58157980ba9746f011a_elevenlabs-logo-black.png" alt="ElevenLabs"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/66a20ff19c0100568100649c_Maltego-Logo-Horizontal-Black.jpg" alt="Maltego"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/66a20ff1f8b0af97bf0b44d9_Splunk_logo%20(1).png" alt="Splunk"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/66a88576d539c12595d7b6fa_Re-Security.png" alt="Re-Security"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3c7b7d8679faefadf5989_image_134_4x.webp" alt="UNICEF"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3c7b7b40e411e3ac3ef93_image_135_4x.webp" alt="UNODC"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3c7b68d89779f5663e4a7_image_136_4x.webp" alt="UNESCO"></div>
+                            
+                            <!-- Track duplication for seamless flow -->
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3c7b6ecd88c4ea0c0b8cb_image_131_4x.webp" alt="Government of India"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3c7b7b92e68604a702dc7_image_132_4x.webp" alt="Meta"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3c7b6bdca6abe7e77e4c4_image_133_4x.webp" alt="Google"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/69e0c58157980ba9746f011a_elevenlabs-logo-black.png" alt="ElevenLabs"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/66a20ff19c0100568100649c_Maltego-Logo-Horizontal-Black.jpg" alt="Maltego"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/66a20ff1f8b0af97bf0b44d9_Splunk_logo%20(1).png" alt="Splunk"></div>
+                            <div class="logo-item"><img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/66a88576d539c12595d7b6fa_Re-Security.png" alt="Re-Security"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Explore Initiatives Section -->
+            <section class="explore-section">
+                <div class="grid-container">
+                    <div class="explore-layout layout-reversed">
+                        <div class="explore-visuals">
+                            <div class="img-wrapper glass-frame item-1">
+                                <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3cdd2211401bf7e9c29b0_image-1.webp" alt="People showing cards">
+                            </div>
+                            <div class="img-wrapper glass-frame item-2">
+                                <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3cdd26b74b831394d1d41_image-2.webp" alt="Group Discussion">
+                            </div>
+                            <!-- Circular CTA Button -->
+                            <div class="explore-cta-wrapper">
+                                <a href="initiatives.html" class="btn-circle-explore">
+                                    <span>Explore</span>
+                                    <svg viewBox="0 0 100 100" class="circle-txt-svg">
+                                        <path id="circlePath" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="transparent"/>
+                                        <text><textPath href="#circlePath">CYBERPEACE INITIATIVES • EXPLORE •</textPath></text>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="explore-info">
+                            <p class="explore-text font-h3">
+                                We collaborate with governments, NGOs and diverse partners to lead pioneering <span class="highlight-purple">CyberPeace initiatives</span>, advancing cybersecurity and awareness across global and social divides.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </sectio            <!-- Latest Happenings Section -->
+            <section class="blogs-section">
+                <div class="grid-container">
+                    <h2 class="section-heading">Latest Happenings</h2>
+                    
+                    <!-- Blog Magazine Grid -->
+                    <div class="blog-magazine-layout">
+                        <!-- Left Side: Featured Article -->
+                        <div class="magazine-featured">
+                            <a href="/resources/blogs/factcheck-old-yogi-adityanath-video-falsely-linked-to-bihar-encounter-case" class="blog-banner-link glass-card hover-tilt">
+                                <div class="banner-img" style="background-image: url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/6a3d14ec7c903e02a5c8e347_ChatGPT%20Image%20Jun%2025%2C%202026%2C%2005_15_41%20PM.png');"></div>
+                                <div class="banner-details">
+                                    <div class="blog-tag">FEATURED BLOG</div>
+                                    <h3 class="banner-title">#FactCheck-Old Yogi Adityanath video falsely linked to Bihar encounter case</h3>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <!-- Right Side: Vertical List of Supporting Articles -->
+                        <div class="magazine-supporting-list">
+                            <!-- Card 1 -->
+                            <a href="/resources/blogs/factcheck-ai-generated-video-of-giant-hailstorm-in-maharashtra-falsely-shared-as-real-weather-event" class="magazine-item-card glass-card hover-tilt">
+                                <div class="card-img-thumb" style="background-image: url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/6a3d16c4f2025b689341b7df_ChatGPT%20Image%20Jun%2025%2C%202026%2C%2005_22_58%20PM.webp');"></div>
+                                <div class="card-info-content">
+                                    <span class="blog-tag">BLOG</span>
+                                    <h4 class="card-title">#FactCheck-AI-generated video of ‘giant hailstorm in Maharashtra’ falsely shared as real weather event</h4>
+                                </div>
+                            </a>
+
+                            <!-- Card 2 -->
+                            <a href="/resources/blogs/when-a-fake-video-became-a-national-crisis-combating-misinformation-in-indias-high-stakes-examination-ecosystem" class="magazine-item-card glass-card hover-tilt">
+                                <div class="card-img-thumb" style="background-image: url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/6a3b6b75e2060ef356fd4220_When%20a%20Fake%20Video%20Became%20a%20%20National%20Crisis%20%20Blog%20Cover%20(1).webp');"></div>
+                                <div class="card-info-content">
+                                    <span class="blog-tag">BLOG</span>
+                                    <h4 class="card-title">When a Fake Video Became a National Crisis | Combating Misinformation in India's High-Stakes Examination Ecosystem</h4>
+                                </div>
+                            </a>
+
+                            <!-- Card 3 -->
+                            <a href="/resources/blogs/factcheck-old-kashmir-operation-visuals-falsely-shared-as-bsf-action-on-bangladeshi-infiltrator-at-tripura-border" class="magazine-item-card glass-card hover-tilt">
+                                <div class="card-img-thumb" style="background-image: url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/6a3d10b1f864e6e2d7354eb1_ChatGPT%20Image%20Jun%2025%2C%202026%2C%2004_57_06%20PM.webp');"></div>
+                                <div class="card-info-content">
+                                    <span class="blog-tag">BLOG</span>
+                                    <h4 class="card-title">#FactCheck-Old Kashmir operation visuals falsely shared as BSF action on Bangladeshi infiltrator at Tripura border</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resources Tab Menu Selection -->
+            <section class="resources-tab-section">
+                <div class="grid-container">
+                    <div class="tab-header-wrap">
+                        <h2 class="resources-subtitle">Find <span class="highlight-purple">resources</span> that matter to you.<br>Choose your preference below</h2>
+                    </div>
+
+                    <div class="tab-system-wrapper">
+                        <span class="tab-prefix">I AM</span>
+                        <!-- Tab Handles -->
+                        <div class="tab-handles-menu">
+                            <button class="tab-btn active" data-tab="tab-gov">Government</button>
+                            <button class="tab-btn" data-tab="tab-civil">Civil Society</button>
+                            <button class="tab-btn" data-tab="tab-acad">Academia</button>
+                            <button class="tab-btn" data-tab="tab-ind">Industry</button>
+                            <button class="tab-btn" data-tab="tab-net">Netizen</button>
+                            <button class="tab-btn" data-tab="tab-cur">Curious</button>
+                        </div>
+
+                        <!-- Tab Panes Content -->
+                        <div class="tab-panes-content">
+                            <!-- Government Pane -->
+                            <div class="tab-pane active" id="tab-gov">
+                                <h3 class="pane-title">Government</h3>
+                                <p class="pane-desc">Find below a curated list of articles detailing the latest developments in cyberlaw & digital diplomacy.</p>
+                                <div class="pane-links-grid">
+                                    <a href="/resources/blogs/centre-proposes-new-bills-for-criminal-law" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650429fb03e82bca150e1298_Criminal-Law-scaled.jpeg')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>Centre Proposes New Bills for Criminal Law</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                    <a href="/resources/blogs/misinformation-on-internet" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650429f36e0a50275442fff8_Blog-Misinformation-scaled.jpeg')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>Highlighting Misinformation on Internet</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                    <a href="https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/64f1962478c28f5bdb4ca78a_Research-Report-on-Phishing-site-replicating-Territorial-Army-Govt.-of-India-website-1%20(1).pdf" target="_blank" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/65006cc56cc249c577c45b5b_Mask%20group-26.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Publication</span>
+                                            <h5>Phishing Site Replicating Territorial Army, Govt. Of India Website</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow rotate-icon"></i>
+                                    </a>
+                                    <a href="https://youtube.com/playlist?list=PLpBBsQ_KSCr-1-nbmyUpHAlLXzjybSg1o&si=FLX_9a4wpy2DdeK1" target="_blank" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650b2eaf1299a7e8cc5f51b5_Mask%20group-18.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Videos</span>
+                                            <h5>Cyber Peace Podcast</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Civil Society Pane -->
+                            <div class="tab-pane" id="tab-civil">
+                                <h3 class="pane-title">Civil Society</h3>
+                                <p class="pane-desc">For socially conscious netizens & NGOs, we have curated the following readings that explore key techno-social issues.</p>
+                                <div class="pane-links-grid">
+                                    <a href="/resources/blogs/companies-require-a-valid-license-for-the-import-of-laptops-tablets" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/661b63953a68812c607806da_Mask%20group-4.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>Companies require a Valid license for the Import of laptops & tablets</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                    <a href="/resources/blogs/centre-proposes-new-bills-for-criminal-law" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650429fb03e82bca150e1298_Criminal-Law-scaled.jpeg')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>Centre Proposes New Bills for Criminal Law</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                    <a href="https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/64fd8630a102c56e1441187d_OSINT-Report-on-BigBillionDaysSpinTheLuckyWheel-Scam-1_compressed.pdf" target="_blank" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/65006b10e5775ea587b8e386_Mask%20group-5.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Publication</span>
+                                            <h5>Big Billion Days Scam</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow rotate-icon"></i>
+                                    </a>
+                                    <a href="https://youtube.com/playlist?list=PLpBBsQ_KSCr-LYjRU6zF_IC9oTRYOdbQW&si=3N4ssoSgS1QuBnRB" target="_blank" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650b2888df14f10d8dad027a_2_4x.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Videos</span>
+                                            <h5>Stop Online Stalkers</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Academia Pane -->
+                            <div class="tab-pane" id="tab-acad">
+                                <h3 class="pane-title">Academia</h3>
+                                <p class="pane-desc">Find reliable information, policy analyses and fresh insights about major shifts in the world of cybersecurity.</p>
+                                <div class="pane-links-grid">
+                                    <a href="/resources/blogs/companies-require-a-valid-license-for-the-import-of-laptops-tablets" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/661b63953a68812c607806da_Mask%20group-4.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>Companies require a Valid license for the Import of laptops & tablets</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                    <a href="/resources/blogs/mod-to-deploy-a-new-os" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650429fa3af2e2bd36a0b001_Indian-MoD-to-Deploy-a-New-OS-scaled.jpeg')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>MoD to Deploy a New OS</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                    <a href="https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/64f0a401be0cc2cddbc28b8f_Blockchain-report-CPF.pdf" target="_blank" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64fff327c354e8d7a23472bf_1_4x.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Publication</span>
+                                            <h5>The National Strategy on Blockchain</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow rotate-icon"></i>
+                                    </a>
+                                    <a href="https://youtube.com/playlist?list=PLpBBsQ_KSCr9E0Gep4vYDg9HE8CO9nKQc&si=Y5WYZjXTegmhbMjx" target="_blank" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650b2d5f9bcdd7305bf63dc3_Mask%20group-9.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Videos</span>
+                                            <h5>CyberPeace Academy</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Industry Pane -->
+                            <div class="tab-pane" id="tab-ind">
+                                <h3 class="pane-title">Industry</h3>
+                                <p class="pane-desc">Tech is reshaping the 21st century as we know it. Read more about the interplay between our daily lives and the “big-tech” industry.</p>
+                                <div class="pane-links-grid">
+                                    <a href="/resources/blogs/companies-require-a-valid-license-for-the-import-of-laptops-tablets" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/661b63953a68812c607806da_Mask%20group-4.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>Companies require a Valid license for the Import of laptops & tablets</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                    <a href="/resources/blogs/g20-conference-on-crime-and-security-in-the-age-of-nfts-ai-and-metaverse" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650429ece263cd195058a971_G20-scaled.jpeg')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>G20 Conference on Crime and Security in the Age of NFTs, AI, and Metaverse</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                    <a href="https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/675c03cb17499b38ca993569_Balada%20Injector%20Persistent%20Malware_%20(1).pdf" target="_blank" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/675c038cbcea80b2c01cc3ed_Designer-2-webp-1792%C3%971024-.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Publication</span>
+                                            <h5>Balada Injector: Persistent Malware Threat Targeting WordPress Sites</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow rotate-icon"></i>
+                                    </a>
+                                    <a href="https://youtube.com/playlist?list=PLpBBsQ_KSCr_RLebHaUYtoXT-UZFX2LWf&si=QFlBe7eHLX8ZlQti" target="_blank" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650b2d8f97d3472ed7c91921_Mask%20group-12.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Videos</span>
+                                            <h5>Technology Update</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Netizen Pane -->
+                            <div class="tab-pane" id="tab-net">
+                                <h3 class="pane-title">Netizen</h3>
+                                <p class="pane-desc">The internet is full of exciting opportunities but grave threats as well. Stay informed of all the recent developments in the world of cybercrime and cybersecurity!</p>
+                                <div class="pane-links-grid">
+                                    <a href="/resources/blogs/mod-to-deploy-a-new-os" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650429fa3af2e2bd36a0b001_Indian-MoD-to-Deploy-a-New-OS-scaled.jpeg')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>MoD to Deploy a New OS</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                    <a href="/resources/blogs/dpdp-at-loksabha-the-cyberpeace-outlook" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650429f7ee4fa69fd6d8ad10_3.png')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>DPDP at LokSabha: The CyberPeace Outlook</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                    <a href="https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/64fd876ed2ab3186e14e699f_Final-Version-Online-Gaming.pdf" target="_blank" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/65006aeab47a73dfda532e83_Mask%20group-3.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Publication</span>
+                                            <h5>Online Gaming : Opportunities and Challenges</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow rotate-icon"></i>
+                                    </a>
+                                    <a href="https://youtube.com/playlist?list=PLpBBsQ_KSCr-wAbxuepzau4Aknz2Vd7AJ&si=Wo7VHQldhESbQ6v4" target="_blank" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650b2dbe250c2fba27765905_Mask%20group-14.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Videos</span>
+                                            <h5>Online Scams & Frauds</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Curious Pane -->
+                            <div class="tab-pane" id="tab-cur">
+                                <h3 class="pane-title">Curious</h3>
+                                <p class="pane-desc">The digital world is evolving rapidly. Stay updated on upcoming trends in online gaming, data privacy and more!</p>
+                                <div class="pane-links-grid">
+                                    <a href="/resources/blogs/centre-proposes-new-bills-for-criminal-law" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650429fb03e82bca150e1298_Criminal-Law-scaled.jpeg')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>Centre Proposes New Bills for Criminal Law</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                    <a href="/resources/blogs/dpdp-at-loksabha-the-cyberpeace-outlook" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650429f7ee4fa69fd6d8ad10_3.png')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>DPDP at LokSabha: The CyberPeace Outlook</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                    <a href="/resources/blogs/barbie-malware" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/661b63ce79d8a881adce0fcf_Mask%20group-5.webp')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>Barbie malware</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                    <a href="/resources/blogs/misinformation-on-internet" class="pane-link-item glass-card">
+                                        <div class="item-img" style="background-image:url('https://cdn.prod.website-files.com/64b94adadbfa4c824629b337/650429f36e0a50275442fff8_Blog-Misinformation-scaled.jpeg')"></div>
+                                        <div class="item-text">
+                                            <span class="item-cat">Blog</span>
+                                            <h5>Misinformation on Internet</h5>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-right arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Best of CyberPeace Section -->
+            <section class="best-section">
+                <div class="grid-container">
+                    <h2 class="section-heading">Best of CyberPeace</h2>
+                    <div class="best-cards-grid">
+                        
+                        <!-- Card 1 -->
+                        <a href="https://www.telegraphindia.com/my-kolkata/news/uk-and-india-pledge-to-fight-cyber-security-challenges-jointly/cid/1925944" target="_blank" class="best-card-item glass-card hover-tilt">
+                            <div class="best-img-wrapper">
+                                <div class="best-card-img" style="background-image: url('https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3c7b6bdca6abe7e77e4c4_image_133_4x.webp');"></div>
+                            </div>
+                            <div class="best-card-content">
+                                <strong>UK, and India pledge to fight cyber security challenges jointly</strong>
+                            </div>
+                        </a>
+
+                        <!-- Card 2 -->
+                        <a href="https://www.cxotoday.com/press-release/cyberpeace-with-civil20-c20-g20-india-organised-cyberpeace-dialogue-on-fostering-trust-and-safety-in-the-digital-age/" target="_blank" class="best-card-item glass-card hover-tilt">
+                            <div class="best-img-wrapper">
+                                <div class="best-card-img" style="background-image: url('https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3c7b7b92e68604a702dc7_image_132_4x.webp');"></div>
+                            </div>
+                            <div class="best-card-content">
+                                <strong>CyberPeace with Civil20 (C20), G20 India organised CyberPeace Dialogue on Fostering Trust and Safety in the Digital Age</strong>
+                            </div>
+                        </a>
+
+                        <!-- Card 3 (Plain info) -->
+                        <div class="best-card-item glass-card hover-tilt">
+                            <div class="best-img-wrapper">
+                                <div class="best-card-img" style="background-image: url('https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d3c7b6ecd88c4ea0c0b8cb_image_131_4x.webp');"></div>
+                            </div>
+                            <div class="best-card-content">
+                                <strong>Indian Cyber Warrior 2013</strong>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <a href="https://theprint.in/ani-press-releases/safer-internet-day-2023-cyberpeace-launches-isafe-multimedia-resources-cyberpeace-tv-and-cyberpeace-cafe/1363384/" target="_blank" class="best-card-item glass-card hover-tilt">
+                            <div class="best-img-wrapper">
+                                <div class="best-card-img" style="background-image: url('https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/6513b0637a8d45c43f15abaa_Favicon%20256x256.svg');"></div>
+                            </div>
+                            <div class="best-card-content">
+                                <strong>Safer Internet Day 2023</strong>
+                                <p class="card-sub-detail">CyberPeace launches iSafe Multimedia Resources, CyberPeace TV & Cafe</p>
+                            </div>
+                        </a>
+
+                        <!-- Card 5 -->
+                        <a href="https://theprint.in/ani-press-releases/cyberpeace-foundation-and-task-government-of-telangana-signs-mou-to-collaborate-for-cybersecurity-research-and-skilling-initiatives/1049276/" target="_blank" class="best-card-item glass-card hover-tilt">
+                            <div class="best-img-wrapper">
+                                <div class="best-card-img" style="background-image: url('https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d28d4c5130957a48d0e325_Logo.svg');"></div>
+                            </div>
+                            <div class="best-card-content">
+                                <strong>MoU Agreement</strong>
+                                <p class="card-sub-detail">CyberPeace Foundation & TASK collaborating for CyberSecurity Research and Skilling initiatives</p>
+                            </div>
+                        </a>
+
+                        <!-- Card 6 -->
+                        <a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=1876462" target="_blank" class="best-card-item glass-card hover-tilt">
+                            <div class="best-img-wrapper">
+                                <div class="best-card-img" style="background-image: url('https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d474b35f8da735700586f5_image-3.webp');"></div>
+                            </div>
+                            <div class="best-card-content">
+                                <strong>NCW launches Digital Shakti 4.0</strong>
+                                <p class="card-sub-detail">Digital Shakti 4.0 focussing on making women digitally skilled and aware</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Volunteer Section -->
+            <section class="volunteer-section">
+                <div class="grid-container">
+                    <div class="volunteer-card-panel glass-card layout-reversed">
+                        <div class="volunteer-visual glass-frame">
+                            <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d474b35f8da735700586f5_image-3.webp" alt="Volunteer Group">
+                        </div>
+                        <div class="volunteer-content">
+                            <h2>Become a Member of the<br><span class="highlight-purple">Largest Volunteer-Powered Movement</span></h2>
+                            <p>
+                                Navigating the vast expanse of cyberspace requires more than just a global entity – it demands a united global community. <br><br>Through our ever-expanding volunteer network, we've been making remarkable strides towards our objectives, leaving meaningful footprints across the globe.
+                            </p>
+                            <a href="#" class="btn btn-primary btn-join">Join Us <i class="fa-solid fa-user-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Media Embed Section -->
+            <section class="socials-section">
+                <div class="grid-container">
+                    <h2 class="section-heading text-center">CyberPeace on Social media</h2>
+                    
+                    <div class="socials-grid">
+                        <!-- Youtube -->
+                        <div class="social-card glass-card hover-tilt">
+                            <h3>Youtube</h3>
+                            <a href="https://www.youtube.com/channel/UCBYrx6bBPp5xpjKaiCqhIKg" target="_blank" class="social-img-link glass-frame">
+                                <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64ddb2065ddbfdf9c249bbb7_yt_4x.webp" alt="YouTube Live Feed">
+                            </a>
+                        </div>
+
+                        <!-- Instagram -->
+                        <div class="social-card glass-card hover-tilt">
+                            <h3>Instagram</h3>
+                            <a href="https://www.instagram.com/cyberpeacefoundation/" target="_blank" class="social-img-link glass-frame">
+                                <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d4db9b45bbe23bb9760ec0_social-1_3x.webp" alt="Instagram Post">
+                            </a>
+                        </div>
+
+                        <!-- Facebook -->
+                        <div class="social-card glass-card hover-tilt">
+                            <h3>Facebook</h3>
+                            <a href="https://www.facebook.com/cyberpeacefoundation/" target="_blank" class="social-img-link glass-frame">
+                                <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d4db9aa30c301ecd9b9183_social-2_4x.webp" alt="Facebook Feed">
+                            </a>
+                        </div>
+
+                        <!-- Twitter -->
+                        <div class="social-card glass-card hover-tilt">
+                            <h3>Twitter</h3>
+                            <a href="https://twitter.com/cyberpeacengo" target="_blank" class="social-img-link glass-frame">
+                                <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d4db9a4cc6594553d88065_social-3_4x.webp" alt="X Post">
+                            </a>
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <div class="social-card glass-card hover-tilt">
+                            <h3>LinkedIn</h3>
+                            <a href="https://in.linkedin.com/company/cyberpeacefoundation" target="_blank" class="social-img-link glass-frame">
+                                <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d4db9ac66726a70531a5ac_social-4_4x.webp" alt="LinkedIn Post">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recommended / Call to Action Links -->
+            <section class="recommended-section">
+                <div class="grid-container">
+                    <div class="recommended-header">
+                        <h2>Become a part of our vision to make the <span class="highlight-purple">digital world safe for all!</span></h2>
+                        <p>Numerous avenues exist for individuals to unite with us and our collaborators in fostering global cyber security</p>
+                    </div>
+
+                    <div class="recommended-links-container">
+                        <!-- Awareness Column -->
+                        <div class="rec-column glass-card">
+                            <div class="col-glow bg-blue-grad"></div>
+                            <div class="col-content">
+                                <h3>Awareness</h3>
+                                <p>Stay Informed: Elevate Your Awareness with Our Latest Events and News Articles Promoting Cyber Peace and Security.</p>
+                                <div class="rec-list">
+                                    <a href="https://www.edexlive.com/news/2025/Aug/14/indian-schools-and-colleges-under-digital-siege-massive-cyber-breach-crisis-exposed" target="_blank" class="rec-link-item">
+                                        <span>Indian schools and colleges under digital siege: Massive cyber breach crisis exposed</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                    <a href="https://ciso.economictimes.indiatimes.com/news/data-breaches/over-2-lakh-cyberattacks-4-lakh-data-breaches-hit-indian-educational-institutions-in-9-months/123294482" target="_blank" class="rec-link-item">
+                                        <span>Over 2 lack cyberattacks, 4 lakh data breaches hit Indian educational institutions in 9 months</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                    <a href="https://the420.in/indian-education-sector-cyberattacks-data-breaches-report/" target="_blank" class="rec-link-item">
+                                        <span>Lessons in Cybersecurity Required: 2 Lakh Cyberattacks Shake Indian Education Sector in Just Nine Months</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                    <a href="https://www.indiatoday.in/education-today/news/story/indian-education-sector-hit-by-2-lakh-cyberattacks-4-lakh-data-breaches-report-2771117-2025-08-14" target="_blank" class="rec-link-item">
+                                        <span>2 lakh cyberattacks, 4 lakh data breaches in Indian educational sector in 9 months</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Engagement Column -->
+                        <div class="rec-column glass-card">
+                            <div class="col-glow bg-yellow-grad"></div>
+                            <div class="col-content">
+                                <h3>Engagement</h3>
+                                <p>Through our ever-expanding volunteer network, we've been making remarkable strides towards our objectives, leaving meaningful footprints across the globe.</p>
+                                <div class="rec-list">
+                                    <a href="/engage" class="rec-link-item">
+                                        <span>Discover ways to collaborate</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                    <a href="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/6597bb858b617e7eb06b6e07_RFP%20CPF%20Content%20Creation.pdf" target="_blank" class="rec-link-item">
+                                        <span>Request for Proposals</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Support Column -->
+                        <div class="rec-column glass-card support-col">
+                            <div class="col-glow bg-purple-grad"></div>
+                            <div class="col-content">
+                                <h3>Play your part for CyberPeace</h3>
+                                <p>Donate to us directly to help us build more pioneering initiatives.</p>
+                                <a href="support-us.html" class="btn btn-primary donate-now-btn">Donate Now <i class="fa-solid fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+                        <footer class="footer-wrapper">
+                <div class="grid-container">
+                    <div class="footer-grid-layout">
+                        <!-- Column 1: Brand details & social icons -->
+                        <div class="footer-col brand-col">
+                            <a href="#" class="footer-logo">
+                                <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d5bf01e439fc5754382dd5_logo-2.svg" alt="Cyberpeace Foundation">
+                            </a>
+                            <div class="footer-social-icons">
+                                <a href="https://www.youtube.com/channel/UCBYrx6bBPp5xpjKaiCqhIKg" target="_blank" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://in.linkedin.com/company/cyberpeacefoundation" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/cyberpeacefoundation/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://twitter.com/cyberpeacengo" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.facebook.com/cyberpeacefoundation/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Engage Links -->
+                        <div class="footer-col links-col">
+                            <h4 class="col-head">Engage</h4>
+                            <a href="initiatives.html">Initiatives</a>
+                            <a href="about-us.html">About Us</a>
+                            <a href="blogs.html">Resources</a>
+                            <a href="/proposals">Procurement</a>
+                            <a href="https://www.cyberpeacesummit.com/" target="_blank">CyberPeace Summit 2.0</a>
+                        </div>
+
+                        <!-- Column 3: Support Links -->
+                        <div class="footer-col links-col">
+                            <h4 class="col-head">Support</h4>
+                            <a href="support-us.html">Support Us</a>
+                            <a href="https://cyberpeace.webflow.io/support-us#faq">FAQs</a>
+                            <a href="events.html">Events</a>
+                            <a href="newsroom.html">Newsroom</a>
+                            <a href="newsletter.html">Newsletter</a>
+                            <a href="grievances.html">Grievances</a>
+                        </div>
+
+                        <!-- Column 4: Contact details & newsletter -->
+                        <div class="footer-col contact-col">
+                            <div class="footer-newsletter">
+                                <h3>Subscribe to stay in touch</h3>
+                                <form id="footer-newsletter-form" class="newsletter-form">
+                                    <input type="email" placeholder="Email address" required>
+                                    <button type="submit" class="newsletter-submit">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="footer-contact-info">
+                                <a href="tel:+919570000066" class="helpline-trigger-btn">
+                                    <i class="fa-solid fa-phone-volume"></i> CyberPeace Helpline
+                                </a>
+                                <div class="address-card">
+                                    <p><i class="fa-solid fa-phone"></i> +91 8235058865</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> Connaught Place, New Delhi - 110001</p>
+                                    <p><i class="fa-solid fa-envelope"></i> secretariat@cyberpeace.net</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 CyberPeace Foundation. All Rights Reserved.</p>
+                        <div class="footer-legal-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Cookie Preference Banner / Modal -->
+            <div id="cookie-banner" class="cookie-banner-comp active">
+                <div class="cookie-banner-container">
+                    <p class="cookie-text">We use cookies to give you the best user experience. For more information, please read our <a href="#">Privacy Policy</a>.</p>
+                    <div class="cookie-actions">
+                        <button class="cookie-pref-link" id="open-cookie-prefs">Preferences</button>
+                        <button class="btn btn-secondary btn-deny" id="deny-cookies">Deny</button>
+                        <button class="btn btn-primary btn-allow" id="allow-cookies">Accept</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Script imports: local libraries & CDNs -->
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.globe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

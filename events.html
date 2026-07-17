@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Events & Campaigns | CyberPeace</title>
+    <meta name="description" content="Stay updated with the latest events, seminars, workshops, and campaigns organized by the CyberPeace Foundation.">
+    
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons & Styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Sticky Premium Navbar -->
+            <header class="navbar-wrapper">
+                <div class="announcement-bar">
+                    <a href="https://cyberpeace.webflow.io/events/launch-of-australian-cybersecurity-qualifications" class="announcement-link">
+                        <span>Launch of Australian Cybersecurity Qualifications</span>
+                        <svg class="arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <nav class="nav-container">
+                    <a href="index.html" class="brand-logo">
+                        <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d28d4c5130957a48d0e325_Logo.svg" alt="CyberPeace">
+                    </a>
+
+                    <div class="nav-menu">
+                        <div class="nav-group-left">
+                            <form action="blogs.html" method="GET" class="search-form">
+                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                <input type="search" name="query" placeholder="Search by Topic..." required>
+                            </form>
+                            <a href="support-us.html" class="nav-item">Support Us</a>
+                            <a href="engage.html" class="nav-item">Engage</a>
+                        </div>
+                        <div class="nav-group-right">
+                            <a href="initiatives.html" class="nav-item">Initiatives</a>
+                            <a href="about-us.html" class="nav-item">About Us</a>
+                            <a href="grievances.html" class="nav-item">Grievances</a>
+                            <div class="dropdown-wrapper">
+                                <button class="dropdown-trigger">
+                                    Resources <i class="fa-solid fa-chevron-down drop-arrow"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="blogs.html">Blogs</a>
+                                    <a href="publications.html">Publications</a>
+                                    <a href="fact-check.html">#FactCheck Report</a>
+                                    <a href="newsroom.html">Newsroom</a>
+                                    <a href="newsletter.html">Newsletter</a>
+                                    <a href="iec.html">IEC</a>
+                                    <a href="https://cyberpeace.world/" target="_blank">CyberPeace Journal</a>
+                                </div>
+                            </div>
+                            <a href="events.html" class="nav-item active">Events</a>
+                        </div>
+                    </div>
+
+                    <button class="mobile-toggle" aria-label="Toggle menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </nav>
+            </header>
+
+            <!-- Floating Side CTA Actions -->
+            <div class="side-cta-wrapper">
+                <a href="support-us.html" class="side-cta-btn donate">
+                    <span class="cta-txt">Donate</span>
+                </a>
+                <a href="engage.html" class="side-cta-btn engage">
+                    <span class="cta-txt">Engage</span>
+                </a>
+            </div>
+
+            <!-- Particles Background -->
+            <div class="canvas-bg-wrapper">
+                <canvas id="grid-particles"></canvas>
+            </div>
+
+            <!-- Subpage Hero -->
+            <section class="subpage-hero">
+                <div class="glow-blob blob-1"></div>
+                <div class="glow-blob blob-2"></div>
+                <div class="grid-container">
+                    <div class="hero-content">
+                        <h1 class="subpage-title">Latest <span class="highlight-purple">Happenings</span></h1>
+                        <p class="subpage-desc">
+                            Discover workshops, seminars, summits, and awareness campaigns organized across regions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Filtering & Event Tabs System -->
+            <section class="subpage-section">
+                <div class="grid-container">
+                    
+                    <div class="about-journey-tabs" style="margin-bottom: 30px;">
+                        <button class="about-journey-btn active" id="btn-tab-events">Events</button>
+                        <button class="about-journey-btn" id="btn-tab-campaigns">Campaigns</button>
+                    </div>
+
+                    <!-- Search Input -->
+                    <div class="filters-row" style="margin-bottom: 40px;">
+                        <div class="search-box-wrap">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input class="form_input" type="text" id="event-search" placeholder="Search events by keyword...">
+                        </div>
+                    </div>
+
+                    <!-- Events Panel -->
+                    <div id="events-panel" class="initiatives-grid active-pane">
+                        
+                        <!-- Event 1 -->
+                        <div class="initiative-card glass-card event-item" data-tags="google kids family workshop safety online">
+                            <span class="initiative-tag"><i class="fa-solid fa-calendar-day"></i> 12 Jun 2026 | Hybrid</span>
+                            <h3 class="initiative-title">CyberPeace First Responder Workshop on Kids & Family Online Safety</h3>
+                            <p class="initiative-desc">
+                                Organised by CyberPeace and DELNET in collaborative partnership with Google, this high-impact event was designed to empower individuals to become first responders.
+                            </p>
+                            <div class="initiative-footer">
+                                <span class="initiative-country">Hybrid: In-person & Virtual</span>
+                                <i class="fa-solid fa-chevron-right initiative-arrow"></i>
+                            </div>
+                        </div>
+
+                        <!-- Event 2 -->
+                        <div class="initiative-card glass-card event-item" data-tags="jharkhand startup summit business connect entrepreneurial">
+                            <span class="initiative-tag"><i class="fa-solid fa-calendar-day"></i> 30 May 2026 | Offline</span>
+                            <h3 class="initiative-title">Entrepreneurial Connect 3.0, Empowering Startups with Cyber Resilience</h3>
+                            <p class="initiative-desc">
+                                CyberPeace participated as a Key Partner at EC 3.0, Jharkhand's largest startup summit, organized by Startup Jharkhand and Startup India to support ecosystems.
+                            </p>
+                            <div class="initiative-footer">
+                                <span class="initiative-country">Jharkhand, India</span>
+                                <i class="fa-solid fa-chevron-right initiative-arrow"></i>
+                            </div>
+                        </div>
+
+                        <!-- Event 3 -->
+                        <div class="initiative-card glass-card event-item" data-tags="national security claws seminar delhi manekshaw smart power">
+                            <span class="initiative-tag"><i class="fa-solid fa-calendar-day"></i> 20 May 2026 | Offline</span>
+                            <h3 class="initiative-title">Smart Power for Sustained National Growth</h3>
+                            <p class="initiative-desc">
+                                Seminars organized by the Centre for Land Warfare Studies (CLAWS) at Manekshaw Centre to discuss emerging security challenges and role of technologies.
+                            </p>
+                            <div class="initiative-footer">
+                                <span class="initiative-country">Manekshaw Centre, Delhi</span>
+                                <i class="fa-solid fa-chevron-right initiative-arrow"></i>
+                            </div>
+                        </div>
+
+                        <!-- Event 4 -->
+                        <div class="initiative-card glass-card event-item" data-tags="hackathon building ai premier league gdg ranchi safety">
+                            <span class="initiative-tag"><i class="fa-solid fa-calendar-day"></i> 17 May 2026 | Offline</span>
+                            <h3 class="initiative-title">Agentic Premier League (Build with AI) – Event Report</h3>
+                            <p class="initiative-desc">
+                                GDG Ranchi, in collaboration with CyberPeace, successfully hosted the Agentic Premier League on the eve of World Telecommunication Day at Level7 Cafe.
+                            </p>
+                            <div class="initiative-footer">
+                                <span class="initiative-country">Level7 Cafe, Ranchi</span>
+                                <i class="fa-solid fa-chevron-right initiative-arrow"></i>
+                            </div>
+                        </div>
+
+                        <!-- Event 5 -->
+                        <div class="initiative-card glass-card event-item" data-tags="cso100 awards conference chennai resilience">
+                            <span class="initiative-tag"><i class="fa-solid fa-calendar-day"></i> 17 May 2026 | Offline</span>
+                            <h3 class="initiative-title">CyberPeace at CSO100 Awards India & Conference 2026</h3>
+                            <p class="initiative-desc">
+                                Driving India's Cyber Resilience Journey at Chennai, bringing cybersecurity leaders, policymakers, technology experts, and stakeholders together.
+                            </p>
+                            <div class="initiative-footer">
+                                <span class="initiative-country">The Leela Palace, Chennai</span>
+                                <i class="fa-solid fa-chevron-right initiative-arrow"></i>
+                            </div>
+                        </div>
+
+                        <!-- Event 6 -->
+                        <div class="initiative-card glass-card event-item" data-tags="national technology day smartphone security delnet workshop delhi">
+                            <span class="initiative-tag"><i class="fa-solid fa-calendar-day"></i> 11 May 2026 | Hybrid</span>
+                            <h3 class="initiative-title">Workshop on Smartphone Security to Mark National Technology Day 2026</h3>
+                            <p class="initiative-desc">
+                                Hands-on smartphone focused security workshop organized by DELNET in collaboration with CyberPeace and support from Google.org.
+                            </p>
+                            <div class="initiative-footer">
+                                <span class="initiative-country">DELNET, New Delhi</span>
+                                <i class="fa-solid fa-chevron-right initiative-arrow"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Campaigns Panel -->
+                    <div id="campaigns-panel" class="initiatives-grid" style="display: none;">
+                        
+                        <!-- Campaign 1 -->
+                        <div class="initiative-card glass-card event-item" data-tags="ncw digital shakti women safety campaign national">
+                            <span class="initiative-tag"><i class="fa-solid fa-flag"></i> Campaign | Active</span>
+                            <h3 class="initiative-title">Digital Shakti 5.0</h3>
+                            <p class="initiative-desc">
+                                National level capacity building campaign in collaboration with NCERT and the National Commission for Women to protect girls and women online.
+                            </p>
+                            <div class="initiative-footer">
+                                <span class="initiative-country">All India Outreach</span>
+                                <i class="fa-solid fa-chevron-right initiative-arrow"></i>
+                            </div>
+                        </div>
+
+                        <!-- Campaign 2 -->
+                        <div class="initiative-card glass-card event-item" data-tags="cisf be cybersmart awareness metro">
+                            <span class="initiative-tag"><i class="fa-solid fa-flag"></i> Campaign | Active</span>
+                            <h3 class="initiative-title">#BECYBERSMART Campaign</h3>
+                            <p class="initiative-desc">
+                                Collaborating with the CISF to drive massive cybersecurity awareness across national airports, metro networks, and public transport systems.
+                            </p>
+                            <div class="initiative-footer">
+                                <span class="initiative-country">Public Sector Metro / Transit</span>
+                                <i class="fa-solid fa-chevron-right initiative-arrow"></i>
+                            </div>
+                        </div>
+
+                        <!-- Campaign 3 -->
+                        <div class="initiative-card glass-card event-item" data-tags="netflix sab ka number aayega digital hygiene entertainment">
+                            <span class="initiative-tag"><i class="fa-solid fa-flag"></i> Campaign | Completed</span>
+                            <h3 class="initiative-title">Sab Ka Number Aayega</h3>
+                            <p class="initiative-desc">
+                                Creative video-led cybersecurity hygiene campaign launched with Netflix India to educate users on strong passwords and device protection.
+                            </p>
+                            <div class="initiative-footer">
+                                <span class="initiative-country">Online Video Campaigns</span>
+                                <i class="fa-solid fa-chevron-right initiative-arrow"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Footer -->
+                        <footer class="footer-wrapper">
+                <div class="grid-container">
+                    <div class="footer-grid-layout">
+                        <!-- Column 1: Brand details & social icons -->
+                        <div class="footer-col brand-col">
+                            <a href="#" class="footer-logo">
+                                <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d5bf01e439fc5754382dd5_logo-2.svg" alt="Cyberpeace Foundation">
+                            </a>
+                            <div class="footer-social-icons">
+                                <a href="https://www.youtube.com/channel/UCBYrx6bBPp5xpjKaiCqhIKg" target="_blank" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://in.linkedin.com/company/cyberpeacefoundation" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/cyberpeacefoundation/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://twitter.com/cyberpeacengo" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.facebook.com/cyberpeacefoundation/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Engage Links -->
+                        <div class="footer-col links-col">
+                            <h4 class="col-head">Engage</h4>
+                            <a href="initiatives.html">Initiatives</a>
+                            <a href="about-us.html">About Us</a>
+                            <a href="blogs.html">Resources</a>
+                            <a href="/proposals">Procurement</a>
+                            <a href="https://www.cyberpeacesummit.com/" target="_blank">CyberPeace Summit 2.0</a>
+                        </div>
+
+                        <!-- Column 3: Support Links -->
+                        <div class="footer-col links-col">
+                            <h4 class="col-head">Support</h4>
+                            <a href="support-us.html">Support Us</a>
+                            <a href="https://cyberpeace.webflow.io/support-us#faq">FAQs</a>
+                            <a href="events.html">Events</a>
+                            <a href="newsroom.html">Newsroom</a>
+                            <a href="newsletter.html">Newsletter</a>
+                            <a href="grievances.html">Grievances</a>
+                        </div>
+
+                        <!-- Column 4: Contact details & newsletter -->
+                        <div class="footer-col contact-col">
+                            <div class="footer-newsletter">
+                                <h3>Subscribe to stay in touch</h3>
+                                <form id="footer-newsletter-form" class="newsletter-form">
+                                    <input type="email" placeholder="Email address" required>
+                                    <button type="submit" class="newsletter-submit">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="footer-contact-info">
+                                <a href="tel:+919570000066" class="helpline-trigger-btn">
+                                    <i class="fa-solid fa-phone-volume"></i> CyberPeace Helpline
+                                </a>
+                                <div class="address-card">
+                                    <p><i class="fa-solid fa-phone"></i> +91 8235058865</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> Connaught Place, New Delhi - 110001</p>
+                                    <p><i class="fa-solid fa-envelope"></i> secretariat@cyberpeace.net</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 CyberPeace Foundation. All Rights Reserved.</p>
+                        <div class="footer-legal-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Top Arrow button -->
+            <a href="#" class="ab_top-arrow" id="back-to-top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Script imports: CDNs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

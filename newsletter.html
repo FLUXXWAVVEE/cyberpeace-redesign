@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Newsletter | CyberPeace</title>
+    <meta name="description" content="Subscribe to the CyberPeace Newsletter to stay updated with cybersecurity briefings and campaign news.">
+    
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons & Styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Sticky Premium Navbar -->
+            <header class="navbar-wrapper">
+                <div class="announcement-bar">
+                    <a href="https://cyberpeace.webflow.io/events/launch-of-australian-cybersecurity-qualifications" class="announcement-link">
+                        <span>Launch of Australian Cybersecurity Qualifications</span>
+                        <svg class="arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <nav class="nav-container">
+                    <a href="index.html" class="brand-logo">
+                        <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d28d4c5130957a48d0e325_Logo.svg" alt="CyberPeace">
+                    </a>
+
+                    <div class="nav-menu">
+                        <div class="nav-group-left">
+                            <form action="blogs.html" method="GET" class="search-form">
+                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                <input type="search" name="query" placeholder="Search by Topic..." required>
+                            </form>
+                            <a href="support-us.html" class="nav-item">Support Us</a>
+                            <a href="engage.html" class="nav-item">Engage</a>
+                        </div>
+                        <div class="nav-group-right">
+                            <a href="initiatives.html" class="nav-item">Initiatives</a>
+                            <a href="about-us.html" class="nav-item">About Us</a>
+                            <a href="grievances.html" class="nav-item">Grievances</a>
+                            <div class="dropdown-wrapper">
+                                <button class="dropdown-trigger active">
+                                    Resources <i class="fa-solid fa-chevron-down drop-arrow"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="blogs.html">Blogs</a>
+                                    <a href="publications.html">Publications</a>
+                                    <a href="fact-check.html">#FactCheck Report</a>
+                                    <a href="newsroom.html">Newsroom</a>
+                                    <a href="newsletter.html" class="active">Newsletter</a>
+                                    <a href="iec.html">IEC</a>
+                                    <a href="https://cyberpeace.world/" target="_blank">CyberPeace Journal</a>
+                                </div>
+                            </div>
+                            <a href="events.html" class="nav-item">Events</a>
+                        </div>
+                    </div>
+
+                    <button class="mobile-toggle" aria-label="Toggle menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </nav>
+            </header>
+
+            <!-- Floating Side CTA Actions -->
+            <div class="side-cta-wrapper">
+                <a href="support-us.html" class="side-cta-btn donate">
+                    <span class="cta-txt">Donate</span>
+                </a>
+                <a href="engage.html" class="side-cta-btn engage">
+                    <span class="cta-txt">Engage</span>
+                </a>
+            </div>
+
+            <!-- Particles Background -->
+            <div class="canvas-bg-wrapper">
+                <canvas id="grid-particles"></canvas>
+            </div>
+
+            <!-- Subpage Hero -->
+            <section class="subpage-hero">
+                <div class="glow-blob blob-1"></div>
+                <div class="glow-blob blob-2"></div>
+                <div class="grid-container">
+                    <div class="hero-content">
+                        <h1 class="subpage-title">Digital Safety <span class="highlight-purple">Newsletter</span></h1>
+                        <p class="subpage-desc">
+                            Subscribe to receive monthly roundups of threat reports, upcoming workshops, and cyber tips directly in your inbox.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Form & Past Briefs -->
+            <section class="subpage-section">
+                <div class="grid-container">
+                    <div class="explore-layout">
+                        <!-- Left Block: Form -->
+                        <div class="glass-card" style="padding: 40px;">
+                            <h2>Subscribe to stay in touch</h2>
+                            <p style="margin-bottom: 24px;">Get curated updates from the CyberPeace team once a month.</p>
+                            <form id="newsletter-page-form">
+                                <div class="form-group">
+                                    <label class="form-label" for="nl-email">Email Address</label>
+                                    <input class="form_input" type="email" id="nl-email" required placeholder="name@domain.com">
+                                </div>
+                                <button type="submit" class="button is-form-submit">Subscribe Now</button>
+                                <div class="form-feedback-msg" id="newsletter-page-feedback"></div>
+                            </form>
+                        </div>
+
+                        <!-- Right Block: Past newsletters list -->
+                        <div class="volunteer-content">
+                            <h2>Past Newsletter Campaigns</h2>
+                            <div class="rec-list" style="margin-top: 24px;">
+                                <a href="#" class="rec-link-item">
+                                    <span>Newsletter Edition May 2026</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="rec-link-item">
+                                    <span>Newsletter Edition April 2026</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="rec-link-item">
+                                    <span>Newsletter Edition March 2026</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+                        <footer class="footer-wrapper">
+                <div class="grid-container">
+                    <div class="footer-grid-layout">
+                        <!-- Column 1: Brand details & social icons -->
+                        <div class="footer-col brand-col">
+                            <a href="#" class="footer-logo">
+                                <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d5bf01e439fc5754382dd5_logo-2.svg" alt="Cyberpeace Foundation">
+                            </a>
+                            <div class="footer-social-icons">
+                                <a href="https://www.youtube.com/channel/UCBYrx6bBPp5xpjKaiCqhIKg" target="_blank" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://in.linkedin.com/company/cyberpeacefoundation" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/cyberpeacefoundation/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://twitter.com/cyberpeacengo" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.facebook.com/cyberpeacefoundation/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Engage Links -->
+                        <div class="footer-col links-col">
+                            <h4 class="col-head">Engage</h4>
+                            <a href="initiatives.html">Initiatives</a>
+                            <a href="about-us.html">About Us</a>
+                            <a href="blogs.html">Resources</a>
+                            <a href="/proposals">Procurement</a>
+                            <a href="https://www.cyberpeacesummit.com/" target="_blank">CyberPeace Summit 2.0</a>
+                        </div>
+
+                        <!-- Column 3: Support Links -->
+                        <div class="footer-col links-col">
+                            <h4 class="col-head">Support</h4>
+                            <a href="support-us.html">Support Us</a>
+                            <a href="https://cyberpeace.webflow.io/support-us#faq">FAQs</a>
+                            <a href="events.html">Events</a>
+                            <a href="newsroom.html">Newsroom</a>
+                            <a href="newsletter.html">Newsletter</a>
+                            <a href="grievances.html">Grievances</a>
+                        </div>
+
+                        <!-- Column 4: Contact details & newsletter -->
+                        <div class="footer-col contact-col">
+                            <div class="footer-newsletter">
+                                <h3>Subscribe to stay in touch</h3>
+                                <form id="footer-newsletter-form" class="newsletter-form">
+                                    <input type="email" placeholder="Email address" required>
+                                    <button type="submit" class="newsletter-submit">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="footer-contact-info">
+                                <a href="tel:+919570000066" class="helpline-trigger-btn">
+                                    <i class="fa-solid fa-phone-volume"></i> CyberPeace Helpline
+                                </a>
+                                <div class="address-card">
+                                    <p><i class="fa-solid fa-phone"></i> +91 8235058865</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> Connaught Place, New Delhi - 110001</p>
+                                    <p><i class="fa-solid fa-envelope"></i> secretariat@cyberpeace.net</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 CyberPeace Foundation. All Rights Reserved.</p>
+                        <div class="footer-legal-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Top Arrow button -->
+            <a href="#" class="ab_top-arrow" id="back-to-top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Script imports: CDNs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

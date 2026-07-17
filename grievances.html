@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grievances | CyberPeace</title>
+    <meta name="description" content="Submit your feedback, reports, complaints, appreciation, or tech bugs to the CyberPeace team for review.">
+    
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons & Styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- Sticky Premium Navbar -->
+            <header class="navbar-wrapper">
+                <div class="announcement-bar">
+                    <a href="https://cyberpeace.webflow.io/events/launch-of-australian-cybersecurity-qualifications" class="announcement-link">
+                        <span>Launch of Australian Cybersecurity Qualifications</span>
+                        <svg class="arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+
+                <nav class="nav-container">
+                    <a href="index.html" class="brand-logo">
+                        <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d28d4c5130957a48d0e325_Logo.svg" alt="CyberPeace">
+                    </a>
+
+                    <div class="nav-menu">
+                        <div class="nav-group-left">
+                            <form action="blogs.html" method="GET" class="search-form">
+                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                <input type="search" name="query" placeholder="Search by Topic..." required>
+                            </form>
+                            <a href="support-us.html" class="nav-item">Support Us</a>
+                            <a href="engage.html" class="nav-item">Engage</a>
+                        </div>
+                        <div class="nav-group-right">
+                            <a href="initiatives.html" class="nav-item">Initiatives</a>
+                            <a href="about-us.html" class="nav-item">About Us</a>
+                            <a href="grievances.html" class="nav-item active">Grievances</a>
+                            <div class="dropdown-wrapper">
+                                <button class="dropdown-trigger">
+                                    Resources <i class="fa-solid fa-chevron-down drop-arrow"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="blogs.html">Blogs</a>
+                                    <a href="publications.html">Publications</a>
+                                    <a href="fact-check.html">#FactCheck Report</a>
+                                    <a href="newsroom.html">Newsroom</a>
+                                    <a href="newsletter.html">Newsletter</a>
+                                    <a href="iec.html">IEC</a>
+                                    <a href="https://cyberpeace.world/" target="_blank">CyberPeace Journal</a>
+                                </div>
+                            </div>
+                            <a href="events.html" class="nav-item">Events</a>
+                        </div>
+                    </div>
+
+                    <button class="mobile-toggle" aria-label="Toggle menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </nav>
+            </header>
+
+            <!-- Floating Side CTA Actions -->
+            <div class="side-cta-wrapper">
+                <a href="support-us.html" class="side-cta-btn donate">
+                    <span class="cta-txt">Donate</span>
+                </a>
+                <a href="engage.html" class="side-cta-btn engage">
+                    <span class="cta-txt">Engage</span>
+                </a>
+            </div>
+
+            <!-- Particles Background -->
+            <div class="canvas-bg-wrapper">
+                <canvas id="grid-particles"></canvas>
+            </div>
+
+            <!-- Subpage Hero -->
+            <section class="subpage-hero">
+                <div class="glow-blob blob-1"></div>
+                <div class="glow-blob blob-2"></div>
+                <div class="grid-container">
+                    <div class="hero-content">
+                        <h1 class="subpage-title">Grievances <span class="highlight-purple">& Feedback</span></h1>
+                        <p class="subpage-desc">
+                            Submit suggestions, file complaints, show appreciation, or report bugs. Your input helps us build a stronger network.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grievance Form Section -->
+            <section class="subpage-section">
+                <div class="grid-container">
+                    <div class="glass-card" style="padding: 50px; max-width: 800px; margin: 0 auto;">
+                        <form id="grievance-form">
+                            <div class="form-group">
+                                <label class="form-label" for="gr-name">Full Name</label>
+                                <input class="form_input" type="text" id="gr-name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="gr-email">Email Address</label>
+                                <input class="form_input" type="email" id="gr-email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="gr-phone">Phone Number</label>
+                                <input class="form_input" type="tel" id="gr-phone" name="phone" required placeholder="+91 9999999999">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="gr-address">Address</label>
+                                <textarea class="textarea" id="gr-address" name="address" required placeholder="Your address details..."></textarea>
+                            </div>
+                            
+                            <div class="explore-layout" style="gap: 30px; margin-bottom: 24px;">
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label class="form-label" for="gr-type">Grievance Type</label>
+                                    <select class="form_select" id="gr-type" name="grievance_type" required>
+                                        <option value="">Select Type...</option>
+                                        <option value="Suggestion">Suggestion</option>
+                                        <option value="Complaint">Complaint</option>
+                                        <option value="Appreciation">Appreciation</option>
+                                        <option value="Bug / Technical Issue">Bug / Technical Issue</option>
+                                        <option value="Content Grievances">Content Grievances</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label class="form-label" for="gr-area">Area of Grievance</label>
+                                    <select class="form_select" id="gr-area" name="area_of_grievance" required>
+                                        <option value="">Select Area...</option>
+                                        <option value="Website Design / UI">Website Design / UI</option>
+                                        <option value="Content / Blogs / Reports">Content / Blogs / Reports</option>
+                                        <option value="Fact-Check Section">Fact-Check Section</option>
+                                        <option value="Training / Programs">Training / Programs</option>
+                                        <option value="Cyber Helpline">Cyber Helpline</option>
+                                        <option value="Events / Initiatives">Events / Initiatives</option>
+                                        <option value="Login / Registration">Login / Registration</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="gr-experience">Details of your Grievance</label>
+                                <textarea class="textarea" id="gr-experience" name="details" required placeholder="Please provide specific details..."></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="gr-rating">How would you rate your overall experience?</label>
+                                <select class="form_select" id="gr-rating" name="experience_rating">
+                                    <option value="">Select rating...</option>
+                                    <option value="Poor">Poor</option>
+                                    <option value="Fair">Fair</option>
+                                    <option value="Good">Good</option>
+                                    <option value="Very Good">Very Good</option>
+                                    <option value="Excellent">Excellent</option>
+                                </select>
+                            </div>
+
+                            <!-- Optional details (conditional in real apps, shown in grid here) -->
+                            <div class="explore-layout" style="gap: 20px; margin-bottom: 24px;">
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label class="form-label" for="gr-url">Page URL (If Bug / Content issue)</label>
+                                    <input class="form_input" type="text" id="gr-url" name="page_url" placeholder="https://...">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label class="form-label" for="gr-device">Device Used</label>
+                                    <select class="form_select" id="gr-device" name="device_used">
+                                        <option value="">Select device...</option>
+                                        <option value="Desktop">Desktop</option>
+                                        <option value="Mobile">Mobile Phone</option>
+                                        <option value="Tablet">Tablet</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0;">
+                                    <label class="form-label" for="gr-browser">Browser</label>
+                                    <input class="form_input" type="text" id="gr-browser" name="browser" placeholder="Chrome, Safari, Firefox...">
+                                </div>
+                            </div>
+
+                            <!-- Radio buttons -->
+                            <div class="radio-group">
+                                <span class="form-label">Would you like us to contact you regarding this grievance?</span>
+                                <label class="radio-button-label">
+                                    <input type="radio" name="contact_back" value="Yes" required>
+                                    <span>Yes, contact me</span>
+                                </label>
+                                <label class="radio-button-label">
+                                    <input type="radio" name="contact_back" value="No" required>
+                                    <span>No, do not contact me</span>
+                                </label>
+                            </div>
+
+                            <!-- Consents Checkboxes -->
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" required>
+                                    <span>I confirm that the information provided is accurate to the best of my knowledge.</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" required>
+                                    <span>I consent to the use of this grievance for improvement and analysis purposes.</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="button is-form-submit">Submit Grievance Report</button>
+                            <div class="form-feedback-msg" id="grievance-form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+                        <footer class="footer-wrapper">
+                <div class="grid-container">
+                    <div class="footer-grid-layout">
+                        <!-- Column 1: Brand details & social icons -->
+                        <div class="footer-col brand-col">
+                            <a href="#" class="footer-logo">
+                                <img src="https://cdn.prod.website-files.com/64b6853d6c8a2733e0348380/64d5bf01e439fc5754382dd5_logo-2.svg" alt="Cyberpeace Foundation">
+                            </a>
+                            <div class="footer-social-icons">
+                                <a href="https://www.youtube.com/channel/UCBYrx6bBPp5xpjKaiCqhIKg" target="_blank" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://in.linkedin.com/company/cyberpeacefoundation" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.instagram.com/cyberpeacefoundation/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://twitter.com/cyberpeacengo" target="_blank" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.facebook.com/cyberpeacefoundation/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Engage Links -->
+                        <div class="footer-col links-col">
+                            <h4 class="col-head">Engage</h4>
+                            <a href="initiatives.html">Initiatives</a>
+                            <a href="about-us.html">About Us</a>
+                            <a href="blogs.html">Resources</a>
+                            <a href="/proposals">Procurement</a>
+                            <a href="https://www.cyberpeacesummit.com/" target="_blank">CyberPeace Summit 2.0</a>
+                        </div>
+
+                        <!-- Column 3: Support Links -->
+                        <div class="footer-col links-col">
+                            <h4 class="col-head">Support</h4>
+                            <a href="support-us.html">Support Us</a>
+                            <a href="https://cyberpeace.webflow.io/support-us#faq">FAQs</a>
+                            <a href="events.html">Events</a>
+                            <a href="newsroom.html">Newsroom</a>
+                            <a href="newsletter.html">Newsletter</a>
+                            <a href="grievances.html">Grievances</a>
+                        </div>
+
+                        <!-- Column 4: Contact details & newsletter -->
+                        <div class="footer-col contact-col">
+                            <div class="footer-newsletter">
+                                <h3>Subscribe to stay in touch</h3>
+                                <form id="footer-newsletter-form" class="newsletter-form">
+                                    <input type="email" placeholder="Email address" required>
+                                    <button type="submit" class="newsletter-submit">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="footer-contact-info">
+                                <a href="tel:+919570000066" class="helpline-trigger-btn">
+                                    <i class="fa-solid fa-phone-volume"></i> CyberPeace Helpline
+                                </a>
+                                <div class="address-card">
+                                    <p><i class="fa-solid fa-phone"></i> +91 8235058865</p>
+                                    <p><i class="fa-solid fa-location-dot"></i> Connaught Place, New Delhi - 110001</p>
+                                    <p><i class="fa-solid fa-envelope"></i> secretariat@cyberpeace.net</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 CyberPeace Foundation. All Rights Reserved.</p>
+                        <div class="footer-legal-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- Top Arrow button -->
+            <a href="#" class="ab_top-arrow" id="back-to-top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Script imports: CDNs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
